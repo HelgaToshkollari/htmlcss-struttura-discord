@@ -1,0 +1,25 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: lightblue;
+}
+.menu ul{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.container.menu {
+    background-color: rgb(191, 216, 140);
+    margin: auto;
+    border: 3px dotted black;
+
+}
+.container {
+    width: 920px;
+    margin: 0 auto;
+    
+}
