@@ -3,33 +3,46 @@
     margin: 0;
     padding: 0;
 }
-header{
-    background-color: lightblue;
-    padding: 2rem;
-   
-}
-.menu ul {
-    list-style: none;
-    text-align: center;
+
+.row{
     display: flex;
-   
 }
 
 .container {
     width: 920px;
     margin: 0 auto;
-    display: flex;
-
-    
 }
-.container.menu {
-    background-color: rgb(191, 216, 140);
-    margin: auto;
-    border: 3px dotted black;
+
+header{
+    background-color: lightblue;
+    padding: 2rem;
    
-    
-
 }
+header .row > div{
+    background-color: rgb(191, 216, 140);
+    border: 2px  dotted black;
+    flex-basis: 20%;
+    line-height: 2rem;
+    padding: 0 5px;
+}
+.row .links-container{
+    flex-grow: 1;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links-container ul li{
+    display: inline-block;
+    line-height: 2rem;
+    text-align: center;
+    padding: 1px;
+}
+.login-container{
+    text-align: right;
+}
+
 .intro{
     background-color: rgb(255, 246, 148);
     padding: 3rem;
@@ -38,7 +51,7 @@ header{
     width: 700px;
     height: 300px;
     background-color: rgb(248, 194, 112);
-    border: 3px dotted black;
+    border: 2px dotted black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,7 +70,7 @@ main section{
     width: 60%;
     height: 400px;
     display: flex;
-    border: 3px dotted black;
+    border: 2px dotted black;
 
 }
 .container .col2{
@@ -65,37 +78,38 @@ main section{
     display: flex;
     width: 40%;
     height: 400px;
-    border: 3px dotted black;
+    border: 2px dotted black;
 }
 .container .col3{
     background-color: rgb(149, 237, 137);
     display: flex;
     width: 100%;
     height: 600px;
-    border: 3px dotted black;
+    border: 2px dotted black;
 }
 footer{
     background-color: rgb(34, 34, 34);
-}
-
-.top{
-    width: 100%;
     display: flex;
-    margin: 1rem 0;
-    border-bottom: 2px solid gray;
 
 }
-.top .main-col {
+footer .container .row{
+    padding-top: 4rem;
+    border-bottom: 3px solid rgb(134, 134, 179);
+}
+
+footer .row .main-col {
     background-color: rgb(237, 137, 217);
     display: flex;
     width: 30%;
     height: 400px;
-    border: 3px dotted black;
+    border: 2px dotted black;
 }
-.top .side-col{
+footer .row .side-col{
     display: flex;
     background-color: aquamarine;
     height: 400px;
     flex-grow: 3;
-    border: 3px dotted black;
+    border: 2px dotted black;
+    margin-bottom: 3rem;
 }
+
